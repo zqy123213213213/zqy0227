@@ -238,12 +238,20 @@
 			</extension>
 		</extensions>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<fork>true</fork>
-				</configuration>
+		<plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <verbose>true</verbose>
+                <fork>true</fork>
+                <executable>${JAVA8_HOME}/bin/javac</executable>
+            </configuration>
+
 			</plugin>
 			<!-- 跳过单元测试 -->
 			<plugin>
