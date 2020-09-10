@@ -5,7 +5,7 @@
   window.SITE_CONFIG = {};
 
   // api接口请求地址
-  window.SITE_CONFIG['baseUrl'] = 'http://localhost:8080/renren-fast';
+  window.SITE_CONFIG['baseUrl'] = 'http://192.168.137.61:8081/renren-fast/swagger/index.html';
 //  http://localhost:8080/renren-fast/swagger/index.html
 
   // cdn地址 = 域名 + 版本号
